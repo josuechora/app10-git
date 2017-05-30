@@ -1,0 +1,470 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Proyecto final</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/tema-app10.min.css"/>
+<!--<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/> -->
+	<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap/js"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/sus.jpg','imagenes/sust.jpg','imagenes/susti.jpg','imagenes/aa.jpg','imagenes/zz.jpg','imagenes/vv.jpg','imagenes/ss.jpg','imagenes/ee.jpg','imagenes/cc.jpg')">
+
+
+<div data-role="page" id="Principal" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>Atlixco, Puebla</h1>
+</div>
+
+<!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/d.jpg" alt="d" title="d" id="wows1_0"/></li>
+		<li><img src="data1/images/dd.jpg" alt="dd" title="dd" id="wows1_1"/></li>
+		<li><img src="data1/images/ddd.jpg" alt="ddd" title="ddd" id="wows1_2"/></li>
+		<li><img src="data1/images/dddd.jpg" alt="dddd" title="dddd" id="wows1_3"/></li>
+		<li><img src="data1/images/ddddd.jpg" alt="ddddd" title="ddddd" id="wows1_4"/></li>
+		<li><img src="data1/images/dddddd.jpg" alt="dddddd" title="dddddd" id="wows1_5"/></li>
+		<li><a href="http://wowslider.com"><img src="data1/images/ddddddd.jpg" alt="bootstrap carousel" title="ddddddd" id="wows1_6"/></a></li>
+		<li><img src="data1/images/dddddddd.jpg" alt="dddddddd" title="dddddddd" id="wows1_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="d"><span><img src="data1/tooltips/d.jpg" alt="d"/>1</span></a>
+		<a href="#" title="dd"><span><img src="data1/tooltips/dd.jpg" alt="dd"/>2</span></a>
+		<a href="#" title="ddd"><span><img src="data1/tooltips/ddd.jpg" alt="ddd"/>3</span></a>
+		<a href="#" title="dddd"><span><img src="data1/tooltips/dddd.jpg" alt="dddd"/>4</span></a>
+		<a href="#" title="ddddd"><span><img src="data1/tooltips/ddddd.jpg" alt="ddddd"/>5</span></a>
+		<a href="#" title="dddddd"><span><img src="data1/tooltips/dddddd.jpg" alt="dddddd"/>6</span></a>
+		<a href="#" title="ddddddd"><span><img src="data1/tooltips/ddddddd.jpg" alt="ddddddd"/>7</span></a>
+		<a href="#" title="dddddddd"><span><img src="data1/tooltips/dddddddd.jpg" alt="dddddddd"/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com/vi">bootstrap slider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+
+<br>
+<div>
+<ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-b">
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Atlixco</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Zocalo</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Viveros de Cabrera</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Hospital de San Juan de Dios</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Ex Convento del Carmen</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Ex Convento de San Francisco</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Festival Huey Atlixcáyotl</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Villa Iluminada</h2>
+</a>
+</li>
+</ul>
+</div>
+
+<div data-role="main" class="ui-content" align="center">
+<div style="width:40%;">
+<ul data-role="controlgroup" data-type="vertical" data-theme="a">
+<li class="ui-first-child ui-last-child">
+<a href="https://www.google.com.mx/maps/dir/Ciudad+de+M%C3%A9xico,+Cdad.+de+M%C3%A9xico/Atlixco,+Puebla/@19.2665143,-99.3132512,9z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x85ce0026db097507:0x54061076265ee841!2m2!1d-99.133208!2d19.4326077!1m5!1m1!1s0x85cfb3eee015f935:0x5c4b12a3f9f700e7!2m2!1d-98.4293891!2d18.9131227!3e0" data-role="button">
+<h2>¿Como llegar desde CDMX?</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="http://atlixco.gob.mx/gastronomia" data-role="button">
+<h2>Gastronomia</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="http://www.cc5.mx/inicio.html" data-role="button" >
+<h2>Ceveceria 5 de Mayo</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="http://municipiospuebla.mx/nota/2016-05-06/atlixco/destaca-mercado-benito-ju%C3%A1rez-como-atractivo-gastron%C3%B3mico-de-atlixco/" data-role="button" >
+<h2>Mercado Benito Juarez</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="http://turismoatlixco.com/feria-de-la-noche-buena/" data-role="button" >
+<h2>Feria de la noche buena</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="http://turismoatlixco.com/feria-de-la-cecina/" data-role="button" >
+<h2>Feria de la cecina</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="http://atlixco.gob.mx/historia-de-atlixco" data-role="button" >
+<h2>Historia</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="http://ntrzacatecas.com/2015/11/01/atlixco-pueblo-magico-con-riqueza-cultural-y-bellos-paisajes/" data-role="button" >
+<h2>Saber mas</h2>
+</a>
+</li>
+</ul>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Elaborado por:</h1>
+<div>
+<p>Josué Chora Martinez</p>
+<br>
+  <div><img src="imagenes/j.jpg" width="40%" height="40%"></div>
+<p>4to H</p>
+<h2>Especialidad:</h2>
+<p>Programación</p>
+<br>
+<h2>Submodulo:</h2>
+<p>Desarrolla Aplicaciones Moviles</p>
+<br>
+<h2>Docente:</h2>
+<p>Lic. José Antonio Gómez Hernandez</p></div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<img src="res/android/mdpi.png" width="46" height="46">
+</div>
+<div>
+<h4>Guia turistica</h4></div>
+</div>
+</div>
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"data-back-btn-theme="b">
+<h1>Atlixco</h1>
+</div>
+
+<div data-role="content">
+ <div>
+ 
+ <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/aa.jpg" alt="aa" title="aa" id="wows1_0"/></li>
+		<li><img src="data1/images/c.jpg" alt="c" title="c" id="wows1_1"/></li>
+		<li><img src="data1/images/cc.jpg" alt="cc" title="cc" id="wows1_2"/></li>
+		<li><img src="data1/images/s.jpg" alt="s" title="s" id="wows1_3"/></li>
+		<li><img src="data1/images/ss.jpg" alt="ss" title="ss" id="wows1_4"/></li>
+		<li><img src="data1/images/v.jpg" alt="v" title="v" id="wows1_5"/></li>
+		<li><a href="http://wowslider.com"><img src="data1/images/vv.jpg" alt="wowslideshow" title="vv" id="wows1_6"/></a></li>
+		<li><img src="data1/images/z.jpg" alt="z" title="z" id="wows1_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="aa"><span><img src="data1/tooltips/aa.jpg" alt="aa"/>1</span></a>
+		<a href="#" title="c"><span><img src="data1/tooltips/c.jpg" alt="c"/>2</span></a>
+		<a href="#" title="cc"><span><img src="data1/tooltips/cc.jpg" alt="cc"/>3</span></a>
+		<a href="#" title="s"><span><img src="data1/tooltips/s.jpg" alt="s"/>4</span></a>
+		<a href="#" title="ss"><span><img src="data1/tooltips/ss.jpg" alt="ss"/>5</span></a>
+		<a href="#" title="v"><span><img src="data1/tooltips/v.jpg" alt="v"/>6</span></a>
+		<a href="#" title="vv"><span><img src="data1/tooltips/vv.jpg" alt="vv"/>7</span></a>
+		<a href="#" title="z"><span><img src="data1/tooltips/z.jpg" alt="z"/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">wowslideshow</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+ 
+ <h1><a href="http://atlixco.gob.mx/">Atlixco</a></h1>
+<h2>Se ubica a 30 km de la ciudad de Puebla, capital del Estado y cuenta con dos importantes vías de acceso: la Carretera Federal 190 y la Autopista Vía Atlixcáyotl.</h2>
+
+<h2>Actualmente, es una moderna ciudad con más de cien mil habitantes, que ha logrado armonizar su desarrollo urbano con el majestuoso legado de arquitectura colonial que dejaron sus fundadores (1579), y que hoy es uno de los principales atractivos turísticos de este municipio.</h2>
+
+<h2>Recibió su título de «Heroica» debido a la Batalla del 4 de mayo de 1862 que precedería a la Batalla de Puebla del 5 de mayo de 1862. Es conocido por su buen clima y la gran actividad florística, comercial y turística que le valieron haber sido llamada Atlixco de las Flores y Granero de la Nueva España, durante la época colonial. </h2>
+
+<div><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image17','','imagenes/aa.jpg',1)"><img src="imagenes/a.jpg" width="40%" height="40%" id="Image17"></a></div>
+
+</div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Guia turistica</h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"data-back-btn-theme="b">
+<h1>Zocalo</h1>
+</div>
+
+<div data-role="content" >
+<div>
+<h1><a href="http://puebla.travel/es/ver-hacer/sitios-de-interes/espacios-naturales-3/item/zocalo-atlixco-parque-colon">Zocalo</a></h1>
+<h2>Una vuelta por el zócalo es una experiencia inolvidable, saboreando los ricos helados y sorbetes que venden cerca de allí, así mismo entrar a algún restaurante para degustar la cecina atlixquense, el guacamole, el consomé Atlixquense, o las truchas en sus diferentes modalidades. A tan solo una cuadra del centro, en el mercado encontrarás tortillas hechas a mano, expendios de cecina, tlacoyos, quesos frescos de la región o si eres de "gustoso paladar" podrás comer los originales chapulines fritos con sal y limón
+</h2>
+
+<div>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image12','','imagenes/zz.jpg',1)"><img src="imagenes/z.jpg" width="40%" height="40%" id="Image12"></a>
+</div>
+
+ </div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Guia turistica</h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"data-back-btn-theme="b">
+<h1>Viveros de Cabrera</h1>
+</div>
+
+
+<div data-role="content" >
+<div>
+<h1><a href="http://ediciones.diariopuntual.com/centro/2016/03/23/16919">Viveros de Cabrera</a></h1>
+<h2> En la colonia Cabrera, se encuentra concentrados una gran cantidad de productores de flores y plantas en viveros, la cual cuenta con 300 mil metros cuadrados de áreas techadas para flor y con más de 500 mil metros cuadrados a cielo abierto. 
+Una gran variedad de flores y plantas de ornato están en exhibición y venta al público en general.</h2>
+
+<div>
+  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image10','','imagenes/vv.jpg',1)"><img src="imagenes/v.jpg" width="40%" height="40%" id="Image10"></a> </div>
+
+</div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Guia turistica</h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"data-back-btn-theme="b">
+<h1>Hospital de San Juan de Dios</h1>
+</div> 
+
+<div data-role="content" >
+<div>
+<h1><a href="http://puebla.travel/es/ver-hacer/sitios-de-interes/iglesias/item/iglesia-y-hospital-de-san-juan-de-dios">Hospital de San Juan de Dios</a></h1>
+<h2> Es considerado el primer hospital de Atlixco, construido a finales del S. XVI, en un inicio funcionó para atender a los habitantes de la población, posteriormente en el S. XVIII pasa a manos de los frailes de San Juan de Dios. El hospital posee un atrio y una pequeña iglesia anexa. El claustro es de dos niveles y en sus fachadas se combina el labrado de cantera y el trabajo de argamasa.</h2>
+<h2>El patio central luce un bello jardín con una fuente octagonal. 
+El hospital alberga en su interior una Pinacoteca con más de 50 obras de temas religiosos de los siglos XVII y XVIII, conserva óleos sobre tela de Pablo de Talavera y Luis Barruecos. </h2>
+
+<div><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image13','','imagenes/ss.jpg',1)"><img src="imagenes/s.jpg" width="40%" height="40%" id="Image13"></a></div>
+
+</div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Guia turistica</h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"data-back-btn-theme="b">
+<h1>Ex Convento del Carmen</h1>
+</div>
+
+<div data-role="content">
+<div>
+<h1><a href="http://puebla.travel/es/ver-hacer/sitios-de-interes/iglesias/item/ex-convento-del-carmen-2">Ex Convento del Carmen</a></h1>
+<h2>La segunda fundación de religiosos que tuvo lugar en Atlixco fue la de los carmelitas. Llegaron el 28 de septiembre de 1589.
+La iglesia y convento del Carmen debió ser el edificio religioso más importante de Atlixco. Limitado por una enorme barda, abarcando aproximadamente dos manzanas, conformado por un claustro pequeño, uno o dos claustros grandes, huerta, dependencias e iglesia anexa a todo el convento.</h2>
+<h2>La construcción del convento y su iglesia datan de 1600 a 1620 y son ejemplo del estilo barroco de la primera mitad del siglo XVII. En la parte superior de la puerta de su iglesia, se encuentra la inscripción: «Soli deo Honor & Gloria».
+En el interior se conservaban decoraciones del siglo XVII en colores y parte del siglo XIX como los de la bóveda en azul, blanco y negro.</h2>
+
+<h2>En el claustro se solía recibir a los peregrinos y era el fritolero o racionero quien se encargaba de darles de comer así como a sus caballos.
+Actualmente, es el Centro Cultural El Carmen y en su interior alberga el Museo de Culturas del Valle de Atlixco y exposiciones temporales.</h2>
+
+<div><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image11','','imagenes/ee.jpg',1)"><img src="imagenes/e.jpg" width="40%" height="40%" id="Image11"></a></div>
+</div>
+</div>
+
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Guia turistica</h4>
+</div>
+</div>
+
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"data-back-btn-theme="b">
+<h1>Ex Convento de San Francisco</h1>
+</div>
+
+
+<div data-role="content" >
+<div>
+  <h2> Su construcción se inició siendo guardián fray Toribio de Benavente, Motolinia, quedando situada en las faldas del cerro de San Miguel, con un pequeño atrio al frente.</h2>
+
+<h2>El interior del templo es de una sola nave cubierta con bóvedas de nervaduras góticas. El retablo mayor es de madera tallada y dorada, obra de la primera mitad del siglo XVIII, los óleos con escenas de la vida de la Virgen son del maestro pintor Francisco Martínez también datan del siglo XVIII.</h2>
+
+<div><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image15','','imagenes/cc.jpg',1)"><img src="imagenes/c.jpg" width="300" height="300" id="Image15"></a></div>
+
+</div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Guia turistica</h4>
+</div>
+</div>
+
+<div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"data-back-btn-theme="b">
+<h1>Festival Huey Atlixcáyotl</h1>
+</div>
+
+<div data-role="content" >
+<div>
+<h2> El Atlixcáyotl es un festival de formación reciente (1965) pero compuesto de música, cantos, danzas y rituales, en gran parte indígenas, algunos de mucha antigüedad. Esos fueron rescatados mediante la investigación de campo, y conservados gracias a su reevaluación y su presentación periódicamente en este festival.»</h2>
+
+<h2>Las representaciones de las danzas, bailes y rituales en este evento se basan en las investigaciones de campo, los consejos de los ancianos de cada población, la motivación de los pueblos participantes y las aportaciones para llevarlo a cabo en forma de efectivo, especies y servicios, proporcionados por el pueblo de Atlixco conjuntamente con las autoridades municipales. 
+Las danzas y bailes son interpretados por los mismos oriundos de los pueblos y barrios de la comarca atlixquense, sin mistificaciones.
+</h2>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Imagen muestra:</h1>
+<div><img src="imagenes/h.jpg" width="40%" height="40%"></div>
+</div>
+</div> 
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Imagen muestra:</h1>
+  <div><img src="imagenes/hh.jpg" width="40%" height="40%"></div>
+</div>
+</div>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Imagen muestra:</h1>
+  <div><img src="imagenes/hhh.jpg" width="40%" height="40%"></div>
+</div>
+</div>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Imagen muestra:</h1>
+  <div><img src="imagenes/hhhh.jpg" width="40%" height="40%"></div>
+</div>
+</div>
+
+
+</div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Guia turistica</h4>
+</div>
+</div>
+
+<div data-role="page" id="Pagina8" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"data-back-btn-theme="b">
+<h1>Villa Iluminada</h1>
+</div>
+
+
+<div data-role="content" >
+<div>
+<h2> Este espectáculo de luz y color ha tomado la importancia ya de una tradición que se ha arraigado en el imaginario de sus pobladores y visitantes. Desde 2011 este proyecto, sin precedentes en el país, logró transformar este pueblo en una Villa Iluminada que en 40 días superó el flujo turístico de todo un año.</h2>
+
+<h2>Al principio llegaron 300,000 visitantes atraídos por el rumor de que un pueblo resplandece en Navidad. El tiempo y tantas luces convertidas en túneles y figuras mágicas que representaban tradiciones y costumbres se encargaron de duplicar la cifra de aquellos primeros caminantes. Por esto, por su historia, sus flores y su cultura en 2015 este rincón poblano fue nombrado Pueblo Mágico.</h2>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Imagen muestra:</h1>
+  <div><img src="imagenes/i.jpg" width="40%" height="40%"></div>
+</div>
+</div>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Imagen muestra:</h1>
+  <div><img src="imagenes/ii.jpg" width="40%" height="40%"></div>
+</div>
+</div>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Imagen muestra:</h1>
+  <div><img src="imagenes/iii.jpg" width="40%" height="40%"></div>
+</div>
+</div>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Imagen muestra:</h1>
+  <div><img src="imagenes/iiii.jpg" width="40%" height="40%"></div>
+</div>
+</div>
+
+
+</div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Guia turistica</h4>
+</div>
+</div>
+
+
+</body>
+</html>
